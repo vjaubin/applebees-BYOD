@@ -308,7 +308,8 @@ nav .material-icons {
       font-family: "FFGoodWebProMedium", sans-serif;
       width: 80%;
       margin: 0 auto;
-      font-weight: 200; }
+      font-weight: 200;
+      color: red; }
 
 .modal {
   visibility: visible; }
