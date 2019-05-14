@@ -1,0 +1,553 @@
+
+$primary-red: #ab192d;
+$light-grey: #404142;
+
+
+body {
+    font-size: 16px;
+    font-family: "Avenir" !important;
+    background: #fff !important;
+    color: $light-grey;
+    //padding-top: 74px;
+}
+
+header {
+    background: #fff;
+    text-align: center;
+    border-bottom: 1px solid #CCCDCF;
+    min-height: 73px;
+    line-height: 73px;
+    
+    //AppleBee's header
+    &.boyd-applebees-brand {
+        h1 {
+            font-size: 1.0625rem;
+            margin: 0;
+            font-family: "FFGoodWebProMedium", sans-serif;
+            font-weight: 900;
+        }
+    }
+}
+
+nav {
+    
+     a {
+            color: $light-grey;
+        }
+    
+    .material-icons {
+        position: absolute;
+        left: 10px;
+        top: 20px;
+        font-size: 2rem;
+       
+    }
+}
+
+.full-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    
+    .container {
+        width: 100%;
+    }
+}
+
+.positioned-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+}
+
+.byod-main {
+    background: #fff;
+    
+    .container {
+        padding: 32px 40px;
+        margin-top: 74px;
+        
+        &.wider-container {
+            padding: 20px;
+        }
+    }
+    
+    .cart {
+        font-size: 0.875rem;
+        
+        .row {
+            margin-bottom: 8px;
+            
+            > div:first-child,
+            > div:last-child {
+                color: #717376;
+            }
+            
+            strong {
+                color: $light-grey;
+            }
+        }
+    }
+    
+    p {
+        color: #717376;
+        line-height: 1.5rem;
+    }
+    
+    fieldset {
+        padding: 0;
+    }
+    
+    .btn-wrap {
+        margin: 28px 0;
+    }
+
+    .c-button {
+        text-transform: none;
+        //display: block;
+        font-size: 0.875rem;
+        padding: 0.8125rem;
+        width: 100%;
+        border-radius: 6px;
+            
+        
+        &.c-button-dark {
+            background: #000;
+            font-size: 1.25rem;
+            
+            
+            img {
+                margin: 0 5px 3px;
+            }
+        }
+        
+             &.c-button-cancel {
+            background-color: #fff;
+            border: 1px solid #404142;
+            color: #404142;
+        }
+    }
+    
+    .error {
+       color: #E51A25; 
+        font-size: 0.75rem;
+    }
+  
+    .form-group {
+         
+        &.has-error {
+            
+            .form-control {
+                border-bottom: 2px solid #E51A25;
+            }
+            
+            .error {
+                position: absolute;
+                right: 0;
+                bottom: -20px;
+            }
+        }
+        
+        #table-code {
+            text-transform: uppercase;
+        }
+
+        &.table-code-group {
+            
+            text-align: center;
+                
+            label {
+                color: #717376;
+                line-height: 1.5rem;
+            }
+            
+            .form-control {
+                max-width: 275px;
+                display: block;
+                margin: 54px auto 44px;
+            }
+        }
+
+        &.floating-label {
+            position:  relative; 
+            margin-bottom:  10px; 
+
+            label {
+                position:  absolute; 
+                top: calc(50% - 7px);
+                left:  0; 
+                opacity:  0; 
+                transition:  all .3s ease; 
+                color: #717376;
+            }
+
+            input {
+                width: 100%;
+                border:  none; 
+                padding:  20px 0px; 
+                height:  56px; 
+                border-bottom: 1px solid #CCCDCF;
+                background:  transparent; 
+                box-sizing:  border-box; 
+                transition:  all .3s linear; 
+                color: #404142;
+                font-size: 1rem;
+
+                &:focus {
+                    outline: 0; 
+                }
+
+                &:not(:placeholder-shown) {
+                    padding:  28px 0px 12px 0px; 
+                }
+
+                &:not(:placeholder-shown) + label {
+                    transform:  translateY(-13px); 
+                    opacity:  1; 
+                   
+                    font-size: 	0.75rem;
+                    
+                    
+                }
+            }
+
+            ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                color: #717376;
+                font-size: 0.875rem;
+            }
+            ::-moz-placeholder { /* Firefox 19+ */
+                color: #717376;
+                font-size: 0.875rem;
+            }
+            :-ms-input-placeholder { /* IE 10+ */
+                color: #717376;
+                font-size: 0.875rem;
+            }
+            :-moz-placeholder { /* Firefox 18- */
+                color: #717376;
+                font-size: 0.875rem;
+            }
+
+        }
+
+        .form-control {
+            color: #404142;
+            font-size: 0.875rem;
+            width: 100%;
+            border:  none; 
+            border-bottom: 1px solid #CCCDCF;
+            border-radius: 0;
+            -webkit-appearance: none; 
+                
+            &.control-lg {
+                border: none;
+                border-bottom: 1px dotted #9D9FA1;
+                font-size: 2.5rem;
+                color: $light-grey;
+                font-weight: bold;
+                text-align: center;
+
+
+                &:focus {
+                    outline:0px !important;
+                    -webkit-appearance:none;
+                }
+            }
+        }
+    }
+	
+	.tip-amount {
+        white-space: nowrap; 
+        overflow-x: auto; 
+        -webkit-overflow-scrolling: touch; 
+        -ms-overflow-style: 
+        -ms-autohiding-scrollbar;
+        //min-height: 60px;
+        margin: 0 -20px;
+        padding: 0 0 8px 20px;
+        
+		li {
+            display: inline-block;
+            
+            a {
+                font-size: 0.875rem;
+                color: #3C4043;
+                padding: 8px 0;
+                display: inline-block;
+                border: 1px solid #CCCDCF;
+                padding: 10px 20px;
+                border-radius: 25px; 
+                
+                &:focus,
+                &:hover {
+                    background: rgba(171,25,45,0.2);
+                    color: #AB192D;
+                    border: 1px solid rgba(171,25,45,0.2);
+                    font-weight: 900;
+                }
+            }
+		}
+	}
+	
+	.scroll::-webkit-scrollbar {
+      display: none; 
+    }
+      
+    .payment-method {
+        list-style: none;
+        margin-top: 32px;
+
+        .material-icons {
+            
+            &.right-side {
+                right: 0;
+                bottom: 15px;
+            }
+            
+            position: absolute;
+            color: #898989;
+            
+            &.red {
+                color: $primary-red;
+            }
+        }
+        
+        li {
+            font-size: 0.875rem;
+            position: relative;
+            
+            a {
+                color: $light-grey;
+                padding: 20px 0;
+                display: block;
+                border-bottom: 1px solid #CCCDCF;
+                
+                .left-side {
+                    position: absolute;
+                    left: -40px;
+                    top: 20px;
+                    width: 24px;
+                    height: 17px;
+                    background-size: 24px 17px;
+                    background-repeat: no-repeat;
+                }
+                
+                .left-side {
+                    top: 19px;
+                }
+                
+//                i.left-side {
+//                    width: 24px;
+//                    height: 17px;
+//                    background-size: 24px 17px;
+//                    background-repeat: no-repeat;
+//                }
+                
+                // Adding chevron to right side
+                i.right-side {
+                    width: 36px;
+                    height: 36px;
+                    background-size: 36px 36px;
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                    background-image: url("../img/baseline_chevron_right_black_36dp.png");
+                }
+                
+                .card-number {
+                    position: relative;
+                    padding-left: 10px;
+                    display: inline-block;
+
+                    &:before {
+                        content:"•";
+                        position: absolute;
+                        left: 0;
+                    }
+                }
+                
+                &.visa-added {
+
+                    i.left-side {
+                        background-image: url("../img/visa.png");    
+                    }
+                }
+
+                &.credit-card-added {
+
+                    i.left-side {
+                        background-image: url("../img/credit-card.png");
+                    }
+                }
+
+                &.add-apple-pay {
+
+                    i.left-side {
+                        background-image: url("../img/apple-pay.png");
+                    }
+                }
+
+                &.apple-pay-added {
+
+                    i.left-side {
+                        background-image: url("../img/apple-pay-added.png");
+                    }
+                }
+
+                &.add-credit-debit-card {
+
+                    i.left-side {
+                        background-image: url("../img/add.png");
+                    }
+                }
+
+                &.add-gift-card {
+
+                    i.left-side {
+                        background-image: url("../img/gift-card.png");
+                    }
+                }
+
+                // Adding red check for payment method added
+                &.payment-added {
+                    
+                    i.right-side {
+                        background-image: url("../img/baseline_check_black_36dp.png");
+                        width: 24px;
+                        height: 24px;
+                        background-size: 24px 24px;
+                     
+                        right: 5px;
+                        top: 15px;
+                       
+                    }
+                }
+            }
+        }
+    }
+    
+    //AppleBee's specific
+    &.boyd-applebees-main {
+        
+        h1 {
+            font-size: 1.75rem;
+            color: $light-grey;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-family: "FFGoodWebProMedium", sans-serif;
+            //letter-spacing: -0.01rem;
+
+            em {
+                font-style: normal;
+                color: $primary-red;
+            } 
+
+            &.hungry-cart {
+                margin-top: 125px;
+            }
+        }
+
+        h2 {
+            font-size: 0.8125rem;
+            color: $light-grey;
+            margin: 32px 0 24px;
+            font-weight: 700;
+        }
+        
+        .divider {
+           text-align: center;
+            position: relative;
+            width: 42%;
+            margin: 0 auto;
+            
+            span {
+                display: inline-block;
+                width: 17px;
+                height: 20px;
+                background: url("../img/apple.png") no-repeat 0 0;
+                background-size: 17px 20px;
+
+            }
+            
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 11px;
+                left: 0;
+                z-index: 1;
+                border-top: 1px dotted #fff;
+                width: 42%;
+            }
+            
+            &:after {
+                right: 0;
+                left: auto;
+             
+            }
+        }
+        
+        p small {
+            font-family: "Roboto Slab";
+            font-size: 0.875rem;
+        }
+        
+        &.thank-you {
+            background: #000 url("../img/thank-you-bg.jpg") no-repeat 0 0;
+            background-size: cover;
+            position: relative;
+            
+            .container {
+                margin-top: 40px;
+            }
+            
+            h1, h2, p {
+                color: #fff;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                margin-bottom: 20vh;
+                //letter-spacing: -0.01rem;
+
+            }
+            
+            h2 {
+                font-size: 1.875rem;
+                font-family: "FFGoodWebProMedium", sans-serif;
+                width: 80%;
+                margin: 0 auto;
+                font-weight: 200;
+                  
+                    
+            }
+        }
+    }
+    
+    
+
+
+}
+
+
+.modal {
+    visibility: visible;
+}
+
+.modal-content {
+    left: auto;
+}
+
+
+
+
+
+
+
+
+

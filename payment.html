@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleBee's - BYOD</title>
+    <meta name="description" content="Add descprition here">
+    <!--Contains Bootstrap-->
+    <link rel="stylesheet" href="https://www.applebees.com/styles/css/main.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--<link href="https://use.typekit.net/pgo2any.css" rel="stylesheet" />-->
+    <!-- Contains style for button, font family -->
+    <link rel="stylesheet" href="https://www.applebees.com/styles/css/applebees/applebees-theme.min.css">
+    <link rel="stylesheet" href="css/byod-applebees.css">
+    <link rel="stylesheet" href="css/fonts-apb.css">
+</head>
+    
+<body>
+<header class="boyd-applebees-brand fixed-top"> 
+    <nav>
+        <a href="checkout.html" aria-label="back"><i class="material-icons" aria-hidden="true">chevron_left</i></a>
+    </nav>
+    
+    <img src="img/applebees-logo.png" width="90" height="45" alt="Applebee's Grill + Bar"> 
+</header>
+    
+<section class="byod-main boyd-applebees-main full-height" role="main">
+    <div class="container wider-container">
+        
+        <h1>Payment</h1>
+        
+        <ul class="payment-method" aria-label="Payment Options">
+            <li>
+                <a href="" aria-label="your saved visa" class="visa-added payment-added">
+                    <i class="left-side" aria-hidden="true"></i>
+                   Visa ending in 3456 <!-- <span aria-label="visa ending in" class="card-number">ending in 3456</span> -->
+                    <i class="right-side" aria-hidden="true"></i>
+                </a>
+            </li>
+             
+            <li>
+                <a href="" aria-label="your saved credit card" class="credit-card-added payment-added">
+                    <i class="left-side" aria-hidden="true"></i>
+                    Credit Card ending in 9736 <!--<span aria-label="credit card ending in" class="card-number">ending in 9736</span> -->
+                    <i class="right-side" aria-hidden="true"></i>
+                </a>
+            </li>
+            
+            <li>
+                <a href="" aria-label="your saved apple pay" class="apple-pay-added payment-added">
+                   <i class="left-side" aria-hidden="true"></i>
+                    Gift Card <span arial-label="gift card balance">Balance: $35.00</span>       
+                    <i class="right-side" aria-hidden="true"></i>
+                </a>
+            </li>
+            
+            <li>
+                <a  aria-label="add apple pay" class="add-apple-pay">
+                   <i class="left-side" aria-hidden="true"></i>
+                    Apple Pay       
+                    <i class="right-side" aria-hidden="true"></i>
+                </a>
+            </li>
+            
+             <li>
+                <a href="credit-debit-card.html" aria-label="add credit or debit card" class="add-credit-debit-card">
+                   <i class="left-side" aria-hidden="true"></i>
+                    Credit or Debit Card 
+                    <i class="right-side" aria-hidden="true"></i>
+                </a>
+            </li>
+            
+             <li>
+                <a href="gift-card.html" aria-label="add gift card" class="add-gift-card">
+                   <i class="left-side" aria-hidden="true"></i>
+                    Gift Card
+                    <i class="right-side" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="text-center positioned-bottom">
+           <p class="error">Add a payment method to cover the full amount</p>
+           
+           <a href="#" class="c-button c-button--colored" aria-label="pay now">Pay Now</a>
+           
+            <a href="#" class="c-button c-button-dark" aria-label="set up apple pay">Set Up<img src="img/Apple_logo_white.svg" width="14" height="16" alt="Apple Pay">Pay</a>
+        </div>
+        
+    </div>
+</section>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  
+<script>
+    $(document).ready(function(){
+$(".c-button-dark").hide();
+$( ".add-apple-pay" ).click(function( event ) {
+  event.preventDefault();
+ $(".c-button--colored").hide();
+  $(".c-button-dark").show();
+});
+    });
+</script>
+  
+</body>
+</html>

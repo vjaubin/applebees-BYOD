@@ -1,0 +1,319 @@
+@charset "UTF-8";
+body {
+  font-size: 16px;
+  font-family: "Avenir" !important;
+  background: #fff !important;
+  color: #404142; }
+
+header {
+  background: #fff;
+  text-align: center;
+  border-bottom: 1px solid #CCCDCF;
+  min-height: 73px;
+  line-height: 73px; }
+  header.boyd-applebees-brand h1 {
+    font-size: 1.0625rem;
+    margin: 0;
+    font-family: "FFGoodWebProMedium", sans-serif;
+    font-weight: 900; }
+
+nav a {
+  color: #404142; }
+nav .material-icons {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  font-size: 2rem; }
+
+.full-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  position: relative; }
+  .full-height .container {
+    width: 100%; }
+
+.positioned-bottom {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px; }
+
+.byod-main {
+  background: #fff; }
+  .byod-main .container {
+    padding: 32px 40px;
+    margin-top: 74px; }
+    .byod-main .container.wider-container {
+      padding: 20px; }
+  .byod-main .cart {
+    font-size: 0.875rem; }
+    .byod-main .cart .row {
+      margin-bottom: 8px; }
+      .byod-main .cart .row > div:first-child,
+      .byod-main .cart .row > div:last-child {
+        color: #717376; }
+      .byod-main .cart .row strong {
+        color: #404142; }
+  .byod-main p {
+    color: #717376;
+    line-height: 1.5rem; }
+  .byod-main fieldset {
+    padding: 0; }
+  .byod-main .btn-wrap {
+    margin: 28px 0; }
+  .byod-main .c-button {
+    text-transform: none;
+    font-size: 0.875rem;
+    padding: 0.8125rem;
+    width: 100%;
+    border-radius: 6px; }
+    .byod-main .c-button.c-button-dark {
+      background: #000;
+      font-size: 1.25rem; }
+      .byod-main .c-button.c-button-dark img {
+        margin: 0 5px 3px; }
+    .byod-main .c-button.c-button-cancel {
+      background-color: #fff;
+      border: 1px solid #404142;
+      color: #404142; }
+  .byod-main .error {
+    color: #E51A25;
+    font-size: 0.75rem; }
+  .byod-main .form-group.has-error .form-control {
+    border-bottom: 2px solid #E51A25; }
+  .byod-main .form-group.has-error .error {
+    position: absolute;
+    right: 0;
+    bottom: -20px; }
+  .byod-main .form-group #table-code {
+    text-transform: uppercase; }
+  .byod-main .form-group.table-code-group {
+    text-align: center; }
+    .byod-main .form-group.table-code-group label {
+      color: #717376;
+      line-height: 1.5rem; }
+    .byod-main .form-group.table-code-group .form-control {
+      max-width: 275px;
+      display: block;
+      margin: 54px auto 44px; }
+  .byod-main .form-group.floating-label {
+    position: relative;
+    margin-bottom: 10px; }
+    .byod-main .form-group.floating-label label {
+      position: absolute;
+      top: calc(50% - 7px);
+      left: 0;
+      opacity: 0;
+      transition: all .3s ease;
+      color: #717376; }
+    .byod-main .form-group.floating-label input {
+      width: 100%;
+      border: none;
+      padding: 20px 0px;
+      height: 56px;
+      border-bottom: 1px solid #CCCDCF;
+      background: transparent;
+      box-sizing: border-box;
+      transition: all .3s linear;
+      color: #404142;
+      font-size: 1rem; }
+      .byod-main .form-group.floating-label input:focus {
+        outline: 0; }
+      .byod-main .form-group.floating-label input:not(:placeholder-shown) {
+        padding: 28px 0px 12px 0px; }
+      .byod-main .form-group.floating-label input:not(:placeholder-shown) + label {
+        transform: translateY(-13px);
+        opacity: 1;
+        font-size: 0.75rem; }
+    .byod-main .form-group.floating-label ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #717376;
+      font-size: 0.875rem; }
+    .byod-main .form-group.floating-label ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #717376;
+      font-size: 0.875rem; }
+    .byod-main .form-group.floating-label :-ms-input-placeholder {
+      /* IE 10+ */
+      color: #717376;
+      font-size: 0.875rem; }
+    .byod-main .form-group.floating-label :-moz-placeholder {
+      /* Firefox 18- */
+      color: #717376;
+      font-size: 0.875rem; }
+  .byod-main .form-group .form-control {
+    color: #404142;
+    font-size: 0.875rem;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #CCCDCF;
+    border-radius: 0;
+    -webkit-appearance: none; }
+    .byod-main .form-group .form-control.control-lg {
+      border: none;
+      border-bottom: 1px dotted #9D9FA1;
+      font-size: 2.5rem;
+      color: #404142;
+      font-weight: bold;
+      text-align: center; }
+      .byod-main .form-group .form-control.control-lg:focus {
+        outline: 0px !important;
+        -webkit-appearance: none; }
+  .byod-main .tip-amount {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    margin: 0 -20px;
+    padding: 0 0 8px 20px; }
+    .byod-main .tip-amount li {
+      display: inline-block; }
+      .byod-main .tip-amount li a {
+        font-size: 0.875rem;
+        color: #3C4043;
+        padding: 8px 0;
+        display: inline-block;
+        border: 1px solid #CCCDCF;
+        padding: 10px 20px;
+        border-radius: 25px; }
+        .byod-main .tip-amount li a:focus, .byod-main .tip-amount li a:hover {
+          background: rgba(171, 25, 45, 0.2);
+          color: #AB192D;
+          border: 1px solid rgba(171, 25, 45, 0.2);
+          font-weight: 900; }
+  .byod-main .scroll::-webkit-scrollbar {
+    display: none; }
+  .byod-main .payment-method {
+    list-style: none;
+    margin-top: 32px; }
+    .byod-main .payment-method .material-icons {
+      position: absolute;
+      color: #898989; }
+      .byod-main .payment-method .material-icons.right-side {
+        right: 0;
+        bottom: 15px; }
+      .byod-main .payment-method .material-icons.red {
+        color: #ab192d; }
+    .byod-main .payment-method li {
+      font-size: 0.875rem;
+      position: relative; }
+      .byod-main .payment-method li a {
+        color: #404142;
+        padding: 20px 0;
+        display: block;
+        border-bottom: 1px solid #CCCDCF; }
+        .byod-main .payment-method li a .left-side {
+          position: absolute;
+          left: -40px;
+          top: 20px;
+          width: 24px;
+          height: 17px;
+          background-size: 24px 17px;
+          background-repeat: no-repeat; }
+        .byod-main .payment-method li a .left-side {
+          top: 19px; }
+        .byod-main .payment-method li a i.right-side {
+          width: 36px;
+          height: 36px;
+          background-size: 36px 36px;
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          top: 10px;
+          background-image: url("../img/baseline_chevron_right_black_36dp.png"); }
+        .byod-main .payment-method li a .card-number {
+          position: relative;
+          padding-left: 10px;
+          display: inline-block; }
+          .byod-main .payment-method li a .card-number:before {
+            content: "•";
+            position: absolute;
+            left: 0; }
+        .byod-main .payment-method li a.visa-added i.left-side {
+          background-image: url("../img/visa.png"); }
+        .byod-main .payment-method li a.credit-card-added i.left-side {
+          background-image: url("../img/credit-card.png"); }
+        .byod-main .payment-method li a.add-apple-pay i.left-side {
+          background-image: url("../img/apple-pay.png"); }
+        .byod-main .payment-method li a.apple-pay-added i.left-side {
+          background-image: url("../img/apple-pay-added.png"); }
+        .byod-main .payment-method li a.add-credit-debit-card i.left-side {
+          background-image: url("../img/add.png"); }
+        .byod-main .payment-method li a.add-gift-card i.left-side {
+          background-image: url("../img/gift-card.png"); }
+        .byod-main .payment-method li a.payment-added i.right-side {
+          background-image: url("../img/baseline_check_black_36dp.png");
+          width: 24px;
+          height: 24px;
+          background-size: 24px 24px;
+          right: 5px;
+          top: 15px; }
+  .byod-main.boyd-applebees-main h1 {
+    font-size: 1.75rem;
+    color: #404142;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-family: "FFGoodWebProMedium", sans-serif; }
+    .byod-main.boyd-applebees-main h1 em {
+      font-style: normal;
+      color: #ab192d; }
+    .byod-main.boyd-applebees-main h1.hungry-cart {
+      margin-top: 125px; }
+  .byod-main.boyd-applebees-main h2 {
+    font-size: 0.8125rem;
+    color: #404142;
+    margin: 32px 0 24px;
+    font-weight: 700; }
+  .byod-main.boyd-applebees-main .divider {
+    text-align: center;
+    position: relative;
+    width: 42%;
+    margin: 0 auto; }
+    .byod-main.boyd-applebees-main .divider span {
+      display: inline-block;
+      width: 17px;
+      height: 20px;
+      background: url("../img/apple.png") no-repeat 0 0;
+      background-size: 17px 20px; }
+    .byod-main.boyd-applebees-main .divider:before, .byod-main.boyd-applebees-main .divider:after {
+      content: '';
+      position: absolute;
+      top: 11px;
+      left: 0;
+      z-index: 1;
+      border-top: 1px dotted #fff;
+      width: 42%; }
+    .byod-main.boyd-applebees-main .divider:after {
+      right: 0;
+      left: auto; }
+  .byod-main.boyd-applebees-main p small {
+    font-family: "Roboto Slab";
+    font-size: 0.875rem; }
+  .byod-main.boyd-applebees-main.thank-you {
+    background: #000 url("../img/thank-you-bg.jpg") no-repeat 0 0;
+    background-size: cover;
+    position: relative; }
+    .byod-main.boyd-applebees-main.thank-you .container {
+      margin-top: 40px; }
+    .byod-main.boyd-applebees-main.thank-you h1, .byod-main.boyd-applebees-main.thank-you h2, .byod-main.boyd-applebees-main.thank-you p {
+      color: #fff; }
+    .byod-main.boyd-applebees-main.thank-you h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 20vh; }
+    .byod-main.boyd-applebees-main.thank-you h2 {
+      font-size: 1.875rem;
+      font-family: "FFGoodWebProMedium", sans-serif;
+      width: 80%;
+      margin: 0 auto;
+      font-weight: 200; }
+
+.modal {
+  visibility: visible; }
+
+.modal-content {
+  left: auto; }
+
+/*# sourceMappingURL=byod-applebees.css.map */

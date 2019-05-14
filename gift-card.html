@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleBee's - BYOD</title>
+    <meta name="description" content="Add descprition here">
+    <!--Contains Bootstrap-->
+    <link rel="stylesheet" href="https://www.applebees.com/styles/css/main.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--<link href="https://use.typekit.net/pgo2any.css" rel="stylesheet" />-->
+   <!-- Contains style for button, font family -->
+    <link rel="stylesheet" href="https://www.applebees.com/styles/css/applebees/applebees-theme.min.css">
+    <link rel="stylesheet" href="css/byod-applebees.css">
+      <link rel="stylesheet" href="css/fonts-apb.css">
+</head>
+<body>
+
+<header class="boyd-applebees-brand fixed-top"> 
+    <nav>
+        <a href="payment.html" aria-label="back"><i class="material-icons" aria-hidden="true">chevron_left</i></a>
+    </nav>
+    
+    <h1>Gift Card</h1>
+</header>
+    
+<section class="byod-main boyd-applebees-main full-height" role="main">
+    <div class="container wider-container">
+       
+       <form>
+           <fieldset>
+           
+           <legend class="sr-only">Gift Card Information</legend>
+        
+            <div class="form-group floating-label mt-3">
+                <input type="text" id="cardNumber" class="form-control" placeholder="Card Number" required>
+                <label class="form-control-placeholder" for="cardNumber">Card Number</label>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group floating-label">
+                        <input type="text" id="giftCardPin" placeholder="Pin" pattern="[0-9]*" class="form-control" required>
+                        <label class="form-control-placeholder" for="giftCardPin">Pin</label>
+                    </div>
+                </div>
+            </div>
+
+
+              <div class="btn-wrap text-center">
+                <button type="submit" id="button" class="c-button c-button--colored" aria-label="Add Gift Card">Add</button>
+            </div>
+            </fieldset>
+        </form>    
+    </div>
+</section>
+</body>
+</html>
