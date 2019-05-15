@@ -542,12 +542,14 @@ nav {
 
 .modal {
     visibility: visible;
+    top:auto!important;
+    bottom: 0 !important;
 }
 
 .modal-content {
     left: auto;
+    border-radius: 0 !important;
 }
-
 
 
 
@@ -558,7 +560,7 @@ nav {
 
 @keyframes animatebottom {
   from {
-    bottom: -300px;
+    bottom: -130px;
     opacity: 0;
   }
 

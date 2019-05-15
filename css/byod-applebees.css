@@ -322,10 +322,13 @@ nav .material-icons {
       font-weight: 200; }
 
 .modal {
-  visibility: visible; }
+  visibility: visible;
+  top: auto !important;
+  bottom: 0 !important; }
 
 .modal-content {
-  left: auto; }
+  left: auto;
+  border-radius: 0 !important; }
 
 .animate-bottom {
   position: relative;
@@ -333,7 +336,7 @@ nav .material-icons {
 
 @keyframes animatebottom {
   from {
-    bottom: -300px;
+    bottom: -130px;
     opacity: 0; }
   to {
     bottom: 0;
