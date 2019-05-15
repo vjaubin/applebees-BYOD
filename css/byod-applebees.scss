@@ -133,10 +133,16 @@ nav {
             }
         }
         
-             &.c-button-cancel {
+        &.c-button-cancel {
             background-color: #fff;
             border: 1px solid #404142;
             color: #404142;
+        }
+        
+        &.c-button--grey {
+            border-radius: 25px;
+            background: #eee;
+            color: #333;
         }
     }
     

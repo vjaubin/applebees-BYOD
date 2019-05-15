@@ -84,6 +84,10 @@ nav .material-icons {
       background-color: #fff;
       border: 1px solid #404142;
       color: #404142; }
+    .byod-main .c-button.c-button--grey {
+      border-radius: 25px;
+      background: #eee;
+      color: #333; }
   .byod-main .error {
     color: #E51A25;
     font-size: 0.75rem; }
