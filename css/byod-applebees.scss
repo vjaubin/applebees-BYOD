@@ -104,6 +104,8 @@ nav {
     
     .btn-wrap {
         margin: 28px 0;
+        left: 20px;
+        right: 20px;
     }
 
     .c-button {
@@ -113,8 +115,14 @@ nav {
         padding: 0.8125rem;
         width: 100%;
         border-radius: 6px;
-            
+        font-family: "FFGoodWebProMedium", sans-serif;
+        font-weight: 900;
         
+        &.c-button--colored {
+            background: #ab192d;
+        }
+
+
         &.c-button-dark {
             background: #000;
             font-size: 1.25rem;
@@ -233,6 +241,7 @@ nav {
         .form-control {
             color: #404142;
             font-size: 0.875rem;
+            font-size: 1rem;
             width: 100%;
             border:  none; 
             border-bottom: 1px solid #CCCDCF;
@@ -519,10 +528,7 @@ nav {
                 font-family: "FFGoodWebProMedium", sans-serif;
                 width: 80%;
                 margin: 0 auto;
-                font-weight: 200;
-                color: red;
-                  
-                    
+                font-weight: 200;     
             }
         }
     }
@@ -539,7 +545,22 @@ nav {
 
 
 
+.animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s;
+}
 
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
 
 
 

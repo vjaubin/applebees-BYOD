@@ -62,13 +62,19 @@ nav .material-icons {
   .byod-main fieldset {
     padding: 0; }
   .byod-main .btn-wrap {
-    margin: 28px 0; }
+    margin: 28px 0;
+    left: 20px;
+    right: 20px; }
   .byod-main .c-button {
     text-transform: none;
     font-size: 0.875rem;
     padding: 0.8125rem;
     width: 100%;
-    border-radius: 6px; }
+    border-radius: 6px;
+    font-family: "FFGoodWebProMedium", sans-serif;
+    font-weight: 900; }
+    .byod-main .c-button.c-button--colored {
+      background: #ab192d; }
     .byod-main .c-button.c-button-dark {
       background: #000;
       font-size: 1.25rem; }
@@ -146,6 +152,7 @@ nav .material-icons {
   .byod-main .form-group .form-control {
     color: #404142;
     font-size: 0.875rem;
+    font-size: 1rem;
     width: 100%;
     border: none;
     border-bottom: 1px solid #CCCDCF;
@@ -308,13 +315,24 @@ nav .material-icons {
       font-family: "FFGoodWebProMedium", sans-serif;
       width: 80%;
       margin: 0 auto;
-      font-weight: 200;
-      color: red; }
+      font-weight: 200; }
 
 .modal {
   visibility: visible; }
 
 .modal-content {
   left: auto; }
+
+.animate-bottom {
+  position: relative;
+  animation: animatebottom 0.4s; }
+
+@keyframes animatebottom {
+  from {
+    bottom: -300px;
+    opacity: 0; }
+  to {
+    bottom: 0;
+    opacity: 1; } }
 
 /*# sourceMappingURL=byod-applebees.css.map */

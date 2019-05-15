@@ -34,26 +34,32 @@
            <legend class="sr-only">Gift Card Information</legend>
         
             <div class="form-group floating-label mt-3">
-                <input type="text" id="cardNumber" class="form-control" placeholder="Card Number" required>
+                <input type="text" id="cardNumber" class="form-control credit-card" placeholder="Card Number" pattern="[0-9]*" required>
                 <label class="form-control-placeholder" for="cardNumber">Card Number</label>
             </div>
 
             <div class="row">
                 <div class="col-6">
                     <div class="form-group floating-label">
-                        <input type="text" id="giftCardPin" placeholder="Pin" pattern="[0-9]*" class="form-control" required>
+                        <input type="text" id="giftCardPin" placeholder="Pin"  pattern="[0-9]*" class="form-control pin" required>
                         <label class="form-control-placeholder" for="giftCardPin">Pin</label>
                     </div>
                 </div>
             </div>
 
 
-              <div class="btn-wrap text-center">
+              <div class="btn-wrap text-center fixed-bottom">
                 <button type="submit" id="button" class="c-button c-button--colored" aria-label="Add Gift Card">Add</button>
             </div>
             </fieldset>
         </form>    
     </div>
 </section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/global.js"></script>
+
+
 </body>
 </html>

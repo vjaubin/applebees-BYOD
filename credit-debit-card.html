@@ -26,7 +26,7 @@
 -->
 
    
-    <style id="antiClickjack"> body { display: none !important; } </style>
+<!--    <style id="antiClickjack"> body { display: none !important; } </style>-->
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                
                 <div class="form-group floating-label mt-3 has-error">
                    
-                    <input type="text" id="cardNumber" class="form-control" autocomplete="cc-number" placeholder="Card Number" maxlength="16" pattern="[0-9]*" required>
+                    <input type="text" id="cardNumber" class="form-control credit-card" autocomplete="cc-number" pattern="[0-9]*" placeholder="Card Number" maxlength="16" required>
                     <label class="form-control-placeholder" for="cardNumber" aria-hidden="true">Card Number</label>
                     <span class="error">Enter valid Card Number</span>
                 </div>
@@ -55,21 +55,21 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="form-group floating-label">
-                            <input type="text" id="expiration-date" class="form-control" placeholder="Exp Date" required>
+                            <input type="text" id="expiration-date" class="form-control exp-date" placeholder="Exp Date" pattern="[0-9]*" required>
                             <label class="form-control-placeholder" for="expiration-date">Expiration Date <span class="sr-only">Enter expiration date in the format MM/YY</span></label>
                         </div>
                     </div>
 
                     <div class="col-6">   
                          <div class="form-group floating-label">
-                            <input type="text" id="cardCSC" class="form-control" placeholder="CCV" maxlength="4" pattern="[0-9]*" required>
+                            <input type="text" id="cardCSC" class="form-control CCV" placeholder="CCV" maxlength="4" pattern="[0-9]*" required>
                             <label class="form-control-placeholder" for="cardCSC">CCV</label>
                         </div>
                     </div>
                 </div>
 
                 <div class="form-group floating-label">
-                    <input type="text" id="zipCode" class="form-control" placeholder="Zip Code" maxlength="5" pattern="[0-9]*" required>
+                    <input type="text" id="zipCode" class="form-control zip-code" placeholder="Zip Code" maxlength="5" pattern="[0-9]*" required>
                     <label class="form-control-placeholder" for="zipCode">Zip Code</label>
                 </div>
             </fieldset> 
@@ -94,7 +94,7 @@
                 </div>
              </fieldset>   
                 
-            <div class="btn-wrap text-center">
+            <div class="btn-wrap text-center fixed-bottom">
                 <button type="submit" id="button" class="c-button c-button--colored d-block" aria-label="Add Credit Card">Add</button>
             </div>
         </form>
@@ -104,6 +104,7 @@
     </div>
 </section>
 
+<!--
     <script type="text/javascript">
         if (self === top) {
             const antiClickjack = document.getElementById("antiClickjack");
@@ -112,5 +113,11 @@
             top.location = self.location;
         }
     </script>
+-->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/global.js"></script>
+
 </body>
 </html>
