@@ -363,5 +363,17 @@ nav .material-icons {
   to {
     bottom: 0;
     opacity: 1; } }
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545; }
+
+.form-control.is-invalid ~ .invalid-feedback, .form-control.is-invalid ~ .invalid-tooltip, .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .form-control:invalid ~ .invalid-tooltip {
+  display: block; }
+
+button:disabled {
+  opacity: .65; }
 
 /*# sourceMappingURL=byod-applebees.css.map */
