@@ -251,6 +251,8 @@ nav {
                 font-size: 0.875rem;
             }
         }
+        
+     
 
         .form-control {
             color: #404142;
@@ -279,6 +281,26 @@ nav {
         }
     }
 	
+   .form-check label {
+        font-size: 0.875rem;
+    }
+    
+    .label-group {
+        overflow: hidden;
+        padding-left: 18px;
+    }
+    
+    .terms {
+        font-size: 0.75rem;
+        color: #9D9FA1;
+        line-height: 1rem;
+        margin-top: 7px;
+        
+        a {
+            color: #ab192d;
+        }
+    }
+
 	.tip-amount {
         white-space: nowrap; 
         overflow-x: auto; 

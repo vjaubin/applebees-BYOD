@@ -178,6 +178,18 @@ nav .material-icons {
       .byod-main .form-group .form-control.control-lg:focus {
         outline: 0px !important;
         -webkit-appearance: none; }
+  .byod-main .form-check label {
+    font-size: 0.875rem; }
+  .byod-main .label-group {
+    overflow: hidden;
+    padding-left: 18px; }
+  .byod-main .terms {
+    font-size: 0.75rem;
+    color: #9D9FA1;
+    line-height: 1rem;
+    margin-top: 7px; }
+    .byod-main .terms a {
+      color: #ab192d; }
   .byod-main .tip-amount {
     white-space: nowrap;
     overflow-x: auto;
