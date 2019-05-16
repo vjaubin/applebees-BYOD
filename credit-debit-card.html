@@ -23,10 +23,10 @@
     <script type="text/javascript" src="js/handleError.js"></script>
     <script type="text/javascript" src="js/payment-credit.js" async></script>
     
--->
 
    
-<!--    <style id="antiClickjack"> body { display: none !important; } </style>-->
+    <style id="antiClickjack"> body { display: none !important; } </style>
+-->
 </head>
 
 <body>
@@ -95,7 +95,8 @@
              </fieldset>   
                 
             <div class="btn-wrap text-center fixed-bottom">
-                <button type="submit" id="button" class="c-button c-button--colored d-block" aria-label="Add Credit Card">Add</button>
+                <button type="submit" id="button" class="c-button c-button--colored d-block" aria-label="Add Credit Card" disabled>Add</button>
+<!--                <button type="submit" id="button" class="btn btn-lg btn-primary btn-block my-2" disabled>Pay Check</button>-->
             </div>
         </form>
         
@@ -104,7 +105,14 @@
     </div>
 </section>
 
-<!--
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/global.js"></script>
+
     <script type="text/javascript">
         if (self === top) {
             const antiClickjack = document.getElementById("antiClickjack");
@@ -113,11 +121,6 @@
             top.location = self.location;
         }
     </script>
--->
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="js/jquery.mask.min.js"></script>
-<script src="js/global.js"></script>
-
+    
 </body>
 </html>

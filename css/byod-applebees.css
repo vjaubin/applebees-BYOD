@@ -10,7 +10,10 @@ header {
   text-align: center;
   border-bottom: 1px solid #CCCDCF;
   min-height: 73px;
-  line-height: 73px; }
+  line-height: 73px;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto; }
   header.boyd-applebees-brand h1 {
     font-size: 1.0625rem;
     margin: 0;
@@ -41,10 +44,12 @@ nav .material-icons {
   right: 20px; }
 
 .byod-main {
-  background: #fff; }
+  background: #fff;
+  padding-top: 74px; }
   .byod-main .container {
     padding: 32px 40px;
-    margin-top: 74px; }
+    max-width: 768px;
+    margin: 0 auto !important; }
     .byod-main .container.wider-container {
       padding: 20px; }
   .byod-main .cart {
@@ -62,9 +67,10 @@ nav .material-icons {
   .byod-main fieldset {
     padding: 0; }
   .byod-main .btn-wrap {
-    margin: 28px 0;
+    margin: 28px auto;
     left: 20px;
-    right: 20px; }
+    right: 20px;
+    max-width: 768px; }
   .byod-main .c-button {
     text-transform: none;
     font-size: 0.875rem;
@@ -172,6 +178,18 @@ nav .material-icons {
       .byod-main .form-group .form-control.control-lg:focus {
         outline: 0px !important;
         -webkit-appearance: none; }
+  .byod-main .form-check label {
+    font-size: 0.875rem; }
+  .byod-main .label-group {
+    overflow: hidden;
+    padding-left: 18px; }
+  .byod-main .terms {
+    font-size: 0.75rem;
+    color: #9D9FA1;
+    line-height: 1rem;
+    margin-top: 7px; }
+    .byod-main .terms a {
+      color: #ab192d; }
   .byod-main .tip-amount {
     white-space: nowrap;
     overflow-x: auto;
@@ -192,8 +210,7 @@ nav .material-icons {
         .byod-main .tip-amount li a:focus, .byod-main .tip-amount li a:hover {
           background: rgba(171, 25, 45, 0.2);
           color: #AB192D;
-          border: 1px solid rgba(171, 25, 45, 0.2);
-          font-weight: 900; }
+          border: 1px solid rgba(171, 25, 45, 0.2); }
   .byod-main .scroll::-webkit-scrollbar {
     display: none; }
   .byod-main .payment-method {
@@ -248,8 +265,8 @@ nav .material-icons {
           background-image: url("../img/credit-card.png"); }
         .byod-main .payment-method li a.add-apple-pay i.left-side {
           background-image: url("../img/apple-pay.png"); }
-        .byod-main .payment-method li a.apple-pay-added i.left-side {
-          background-image: url("../img/apple-pay-added.png"); }
+        .byod-main .payment-method li a.applebee-card-added i.left-side {
+          background-image: url("../img/applebee-card-added.png"); }
         .byod-main .payment-method li a.add-credit-debit-card i.left-side {
           background-image: url("../img/add.png"); }
         .byod-main .payment-method li a.add-gift-card i.left-side {
@@ -277,6 +294,11 @@ nav .material-icons {
     color: #404142;
     margin: 32px 0 24px;
     font-weight: 700; }
+  .byod-main.boyd-applebees-main .tip-amt-label {
+    font-family: "FFGoodWebProMedium", sans-serif;
+    color: #404142;
+    font-size: 1.125rem;
+    margin: 0 0 36px 0; }
   .byod-main.boyd-applebees-main .divider {
     text-align: center;
     position: relative;
@@ -305,7 +327,9 @@ nav .material-icons {
   .byod-main.boyd-applebees-main.thank-you {
     background: #000 url("../img/thank-you-bg.jpg") no-repeat 0 0;
     background-size: cover;
-    position: relative; }
+    position: relative;
+    max-width: 768px;
+    margin: 0 auto; }
     .byod-main.boyd-applebees-main.thank-you .container {
       margin-top: 40px; }
     .byod-main.boyd-applebees-main.thank-you h1, .byod-main.boyd-applebees-main.thank-you h2, .byod-main.boyd-applebees-main.thank-you p {
@@ -321,10 +345,20 @@ nav .material-icons {
       margin: 0 auto;
       font-weight: 200; }
 
-.modal {
+.modal#otherTipAmount {
   visibility: visible;
   top: auto !important;
   bottom: 0 !important; }
+  .modal#otherTipAmount .modal-header {
+    border-bottom: none;
+    padding-bottom: 0; }
+  .modal#otherTipAmount .form-control.control-lg {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 36px; }
+  .modal#otherTipAmount .modal-dialog p {
+    font-size: 0.875rem; }
 
 .modal-content {
   left: auto;
@@ -332,7 +366,7 @@ nav .material-icons {
 
 .animate-bottom {
   position: relative;
-  animation: animatebottom 0.4s; }
+  animation: animatebottom 0.8s; }
 
 @keyframes animatebottom {
   from {
@@ -341,5 +375,23 @@ nav .material-icons {
   to {
     bottom: 0;
     opacity: 1; } }
+.modal.fade.animate .modal-dialog {
+  transform: translate(0, 125%) !important; }
+
+.modal.show.animate .modal-dialog {
+  transform: none !important; }
+
+.invalid-feedback {
+  display: none;
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545; }
+
+.form-control.is-invalid ~ .invalid-feedback, .form-control.is-invalid ~ .invalid-tooltip, .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .form-control:invalid ~ .invalid-tooltip {
+  display: block; }
+
+button:disabled {
+  opacity: .65; }
 
 /*# sourceMappingURL=byod-applebees.css.map */

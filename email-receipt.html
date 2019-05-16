@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppleBee's - BYOD</title>
+    <meta name="description" content="Add descprition here">
+    <!--Contains Bootstrap-->
+    <link rel="stylesheet" href="https://www.applebees.com/styles/css/main.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!--<link href="https://use.typekit.net/pgo2any.css" rel="stylesheet" />-->
+   <!-- Contains style for button, font family -->
+    <link rel="stylesheet" href="https://www.applebees.com/styles/css/applebees/applebees-theme.min.css">
+    <link rel="stylesheet" href="css/byod-applebees.css">
+      <link rel="stylesheet" href="css/fonts-apb.css">
+</head>
+<body>
+
+<header class="boyd-applebees-brand fixed-top"> 
+    <nav>
+        <a href="thank-you.html" aria-label="back"><i class="material-icons" aria-hidden="true">chevron_left</i></a>
+    </nav>
+    
+    <h1>Send Receipt</h1>
+</header>
+    
+<section class="byod-main boyd-applebees-main full-height" role="main">
+    <div class="container wider-container">
+       
+       <form>
+           <fieldset>
+           
+           <legend class="sr-only">Email Information</legend>
+        
+            <div class="form-group floating-label mt-3">
+                <input type="email" id="email" class="form-control" placeholder="Email" required>
+                <label class="form-control-placeholder" for="email">Email</label>
+            </div>
+            
+            <div class="form-check mt-4">
+                <input class="form-check-input float-left" type="checkbox" value="" id="email-subcribe">
+                
+                   <div class="label-group">
+                    <label class="form-check-label" for="email-subcribe">
+                    Send me emails about future events, special offers, and promotions
+                    </label>
+                    
+                    <p class="terms">
+                        By signing up you agree to the <a href="Terms and conditions">Terms and conditions</a>. Please review our <a href="#">Privacy Policy</a> for more information. You must be 13 years or older to join/participate.
+                    </p>
+                    
+                    
+                </div>
+            </div>
+
+
+
+              <div class="btn-wrap text-center fixed-bottom">
+                <button type="submit" id="button" class="c-button c-button--colored" aria-label="Email Receipt">Send</button>
+            </div>
+            </fieldset>
+        </form>    
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/global.js"></script>
+
+
+</body>
+</html>
