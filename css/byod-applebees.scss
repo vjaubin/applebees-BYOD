@@ -613,7 +613,8 @@ nav {
 
 .animate-bottom {
   position: relative;
-  animation: animatebottom 0.2s;
+  animation: animatebottom 0.8s;
+   
 }
 
 @keyframes animatebottom {
@@ -628,7 +629,13 @@ nav {
   }
 }
 
+.modal.fade.animate  .modal-dialog {
+  transform: translate(0, 125%) !important;
+}
 
+.modal.show.animate  .modal-dialog {
+  transform: none !important;
+}
 
 .invalid-feedback {
     display: none;

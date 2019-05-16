@@ -366,7 +366,7 @@ nav .material-icons {
 
 .animate-bottom {
   position: relative;
-  animation: animatebottom 0.2s; }
+  animation: animatebottom 0.8s; }
 
 @keyframes animatebottom {
   from {
@@ -375,6 +375,12 @@ nav .material-icons {
   to {
     bottom: 0;
     opacity: 1; } }
+.modal.fade.animate .modal-dialog {
+  transform: translate(0, 125%) !important; }
+
+.modal.show.animate .modal-dialog {
+  transform: none !important; }
+
 .invalid-feedback {
   display: none;
   width: 100%;
