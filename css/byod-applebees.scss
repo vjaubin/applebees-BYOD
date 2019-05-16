@@ -397,7 +397,7 @@ nav {
                     position: absolute;
                     right: 0;
                     top: 10px;
-                    background-image: url("../img/baseline_chevron_right_black_36dp.png");
+                    background-image: url("./img/baseline_chevron_right_black_36dp.png");
                 }
                 
                 .card-number {
@@ -415,42 +415,42 @@ nav {
                 &.visa-added {
 
                     i.left-side {
-                        background-image: url("../img/visa.png");    
+                        background-image: url("./img/visa.png");    
                     }
                 }
 
                 &.credit-card-added {
 
                     i.left-side {
-                        background-image: url("../img/credit-card.png");
+                        background-image: url("./img/credit-card.png");
                     }
                 }
 
                 &.add-apple-pay {
 
                     i.left-side {
-                        background-image: url("../img/apple-pay.png");
+                        background-image: url("./img/apple-pay.png");
                     }
                 }
 
                 &.applebee-card-added {
 
                     i.left-side {
-                        background-image: url("../img/applebee-card-added.png");
+                        background-image: url("./img/applebee-card-added.png");
                     }
                 }
 
                 &.add-credit-debit-card {
 
                     i.left-side {
-                        background-image: url("../img/add.png");
+                        background-image: url("./img/add.png");
                     }
                 }
 
                 &.add-gift-card {
 
                     i.left-side {
-                        background-image: url("../img/gift-card.png");
+                        background-image: url("./img/gift-card.png");
                     }
                 }
 
@@ -458,7 +458,7 @@ nav {
                 &.payment-added {
                     
                     i.right-side {
-                        background-image: url("../img/baseline_check_black_36dp.png");
+                        background-image: url("./img/baseline_check_black_36dp.png");
                         width: 24px;
                         height: 24px;
                         background-size: 24px 24px;
@@ -517,7 +517,7 @@ nav {
                 display: inline-block;
                 width: 17px;
                 height: 20px;
-                background: url("../img/apple.png") no-repeat 0 0;
+                background: url("./img/apple.png") no-repeat 0 0;
                 background-size: 17px 20px;
 
             }
@@ -548,7 +548,7 @@ nav {
         }
         
         &.thank-you {
-            background: #000 url("/img/thank-you-bg.jpg") no-repeat 0 0;
+            background: #000 url("./img/thank-you-bg.jpg") no-repeat 0 0;
             background-size: cover;
             position: relative;
             max-width: $max-width;
