@@ -651,3 +651,18 @@ nav {
 button:disabled {
  opacity: .65;
 }
+
+
+.summry-table {
+    margin-bottom: 20px;
+    
+    a {
+        border: 1px solid #ddd;
+        background: #fafafa;
+        display: block;
+        
+        &:hover {
+            background: #eee;
+        }
+    }
+}
