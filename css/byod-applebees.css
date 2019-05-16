@@ -325,7 +325,7 @@ nav .material-icons {
     font-family: "Roboto Slab";
     font-size: 0.875rem; }
   .byod-main.boyd-applebees-main.thank-you {
-    background: #000 url("../img/thank-you-bg.jpg") no-repeat 0 0;
+    background: #000 url("/img/thank-you-bg.jpg") no-repeat 0 0;
     background-size: cover;
     position: relative;
     max-width: 768px;
