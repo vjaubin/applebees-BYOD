@@ -116,6 +116,11 @@ nav {
         max-width: $max-width;
     }
 
+    
+//    input[type="submit"]:focus,
+//    .c-button:focus {
+//      outline: -webkit-focus-ring-color auto 5px;
+//    }
     .c-button {
         text-transform: none;
         //display: block;
@@ -125,6 +130,11 @@ nav {
         border-radius: 6px;
         font-family: "FFGoodWebProMedium", sans-serif;
         font-weight: 900;
+        outline: inherit;
+        
+        &:focus {
+          outline: -webkit-focus-ring-color auto 5px;
+        }
         
         &.c-button--colored {
             background: #ab192d;
@@ -375,6 +385,10 @@ nav {
                     height: 17px;
                     background-size: 24px 17px;
                     background-repeat: no-repeat;
+                }
+                
+                &:focus {
+                    outline: -webkit-focus-ring-color auto 5px;
                 }
                 
                 .left-side {

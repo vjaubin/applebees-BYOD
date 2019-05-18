@@ -78,7 +78,10 @@ nav .material-icons {
     width: 100%;
     border-radius: 6px;
     font-family: "FFGoodWebProMedium", sans-serif;
-    font-weight: 900; }
+    font-weight: 900;
+    outline: inherit; }
+    .byod-main .c-button:focus {
+      outline: -webkit-focus-ring-color auto 5px; }
     .byod-main .c-button.c-button--colored {
       background: #ab192d; }
     .byod-main .c-button.c-button-dark {
@@ -240,6 +243,8 @@ nav .material-icons {
           height: 17px;
           background-size: 24px 17px;
           background-repeat: no-repeat; }
+        .byod-main .payment-method li a:focus {
+          outline: -webkit-focus-ring-color auto 5px; }
         .byod-main .payment-method li a .left-side {
           top: 19px; }
         .byod-main .payment-method li a i.right-side {
