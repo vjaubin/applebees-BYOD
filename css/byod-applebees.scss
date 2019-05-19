@@ -167,9 +167,75 @@ nav {
     .error {
        color: #E51A25; 
         font-size: 0.75rem;
+        text-align: right;
     }
+    
+    .alt-form {
+
+        label {
+            font-size: 	0.75rem;
+            color: #717376;
+            display: block;
+            margin-bottom: 0;
+        }
+        
+        
+        .form-control {
+            padding: 8px 0 14px;
+            
+           &.is-invalid {
+                border-bottom: 2px solid #E51A25;
+            }
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .form-inline  {
+            
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+           
+            
+            .form-group {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin-bottom: 0;
+                
+             
+            }
+        }
+    }
+
   
     .form-group {
+        
+       .error {
+            position: absolute;
+            right: 0;
+            bottom: -20px;
+        }
          
         &.has-error {
             

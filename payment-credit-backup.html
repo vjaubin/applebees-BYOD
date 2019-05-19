@@ -45,70 +45,77 @@ privacy policy link
     <div class="container wider-container">
         <form id="form" novalidate>
         
-        <fieldset class="alt-form">
+        <fieldset>
                <legend class="sr-only">Credit Card Information</legend>
                
-                <div class="form-group mt-3">
-                    <div class="replaced">
-                        <label for="cardNumber">Card Number</label>
-                        <input id="cardNumber" title="Credit Card Number" type="text" maxlength="16" pattern="[0-9]{15,16}" class="form-control" autocomplete="cc-number" required readonly>
+                <div class="form-group floating-label">
+               
+                    <div class="form-row form-group">
 
-                        <div class="invalid-feedback error">
-                            Card number invalid.
+                        <div class="replaced">
+                           
+                            <input id="cardNumber" title="Credit Card Number" placeholder="Card Number" type="text" maxlength="16" pattern="[0-9]{15,16}" class="form-control" autocomplete="cc-number" required readonly>
+                            <label for="cardNumber" form-control-placeholder>Card Number*</label>
+                            <div class="invalid-feedback">
+                                Card number invalid.
+                            </div>
                         </div>
                     </div>
-                </div>
+               
+            </div>
         
       
             <div class="row">
                 <div class="col-6 replaced">
                     <div class="form-group" aria-labelledby="expirationLabel">
-                        <label id="expirationLabel">Expiration</label>
-                    
-                            <input id="cardExpirationMonth" title="Credit Card Expiration Month" placeholder="MM" type="tel" maxlength="2" pattern="[0-9]{2}" class="form-control expiration col-5 pl-0" aria-label="Expiration Month" autocomplete="cc-exp-month" required>
-                          
-                            <input id="cardExpirationYear" title="Credit Card Expiration Year" placeholder="YY" type="tel" maxlength="2" pattern="[0-9]{2}" class="form-control expiration col-5 ml-4 pl-0" aria-label="Expiration Year" autocomplete="cc-exp-year" required>
-                            
-                            <div class="invalid-feedback error">
+                        <label id="expirationLabel">Expiration*</label>
+                        <div class="form-inline">
+                            <input id="cardExpirationMonth" title="Credit Card Expiration Month" placeholder="MM" type="tel" maxlength="2" pattern="[0-9]{2}" class="form-control expiration" aria-label="Expiration Month" autocomplete="cc-exp-month" required>
+                            <span class="mx-1">/</span>
+                            <input id="cardExpirationYear" title="Credit Card Expiration Year" placeholder="YY" type="tel" maxlength="2" pattern="[0-9]{2}" class="form-control expiration" aria-label="Expiration Year" autocomplete="cc-exp-year" required>
+                            <div class="invalid-feedback">
                                 Expiration invalid.
                             </div>
-                        
+                        </div>
                     </div>
                 </div>
                 <div class="col-6 replaced">
-                    <div class="form-group">
-                        <label for="cardCSC" class="form-control-placeholder">CCV</label>
+                    <div class="form-group floating-label">
                         
-                        <input id="cardCSC" title="Credit Card CSC Code" type="text" maxlength="4" pattern="[0-9]{3,4}" class="form-control csc" autocomplete="cc-csc" required readonly>
-
-                        <div class="invalid-feedback error">
+                        <input id="cardCSC" title="Credit Card CSC Code" type="text" maxlength="4" pattern="[0-9]{3,4}" class="form-control csc" placeholder="CSC" autocomplete="cc-csc" required readonly>
+                        <label for="cardCSC" class="form-control-placeholder">CSC*</label>
+                          
+                        <div class="invalid-feedback">
                             CSC invalid.
                         </div>
                     </div>
-                </div>        
+                </div>
+           
             </div>
             
           
-            <div class="form-group">
-                 <label for="zipCode" class="form-control-placeholder">Zip Code</label>
-                <input id="zipCode" title="Zip Code" type="tel" maxlength="5" pattern="[0-9]{5}" class="form-control zip" autocomplete="postal-code" required>
-
-            </div>
+                <div class="form-group floating-label">
+                    
+                    <input id="zipCode" title="Zip Code" type="tel" maxlength="5" pattern="[0-9]{5}" class="form-control zip" placeholder="Zip Code" autocomplete="postal-code" required>
+                    <label for="zipCode" class="form-control-placeholder">Zip Code*</label>
+                </div>
                 
              <div class="row">
                 <div class="col-6">
-                    <div class="form-group">
-                        <label for="firstName" class="form-control-placeholder">First Name</label>
-                        <input id="firstName" type="text" maxlength="50" class="form-control" autocomplete="cc-given-name" required>
+                    <div class="form-group floating-label">
+                        
+                        <input id="firstName" type="text" maxlength="50" class="form-control" placeholder="First Name" autocomplete="cc-given-name" required>
+                        <label for="firstName" class="form-control-placeholder">First Name*</label>
+                        
+
                     </div>
                 </div>
                 
                 <div class="col-6">
-                    <div class="form-group">
-                        <label for="lastName" class="form-control-placeholder">Last Name</label>
+                    <div class="form-group floating-label">
                         
-                        <input id="lastName" t type="text" maxlength="50" class="form-control"  autocomplete="cc-family-name" required>
-                        
+                        <input id="lastName" t type="text" maxlength="50" class="form-control" placeholder="Last Name" autocomplete="cc-family-name" required>
+                        <label for="lastName" class="form-control-placeholder">Last Name*</label>
                     </div>
                 </div>
             </div>
