@@ -99,15 +99,17 @@ nav .material-icons {
       color: #333; }
   .byod-main .error {
     color: #E51A25;
-    font-size: 0.75rem;
-    text-align: right; }
+    font-size: 0.75rem; }
+  .byod-main input:focus {
+    outline: -webkit-focus-ring-color auto 5px !important; }
   .byod-main .alt-form label {
     font-size: 0.75rem;
     color: #717376;
     display: block;
     margin-bottom: 0; }
   .byod-main .alt-form .form-control {
-    padding: 8px 0 14px; }
+    padding: 8px 0 14px;
+    background: transparent; }
     .byod-main .alt-form .form-control.is-invalid {
       border-bottom: 2px solid #E51A25; }
   .byod-main .alt-form .form-group {
