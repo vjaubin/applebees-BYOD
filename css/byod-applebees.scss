@@ -104,6 +104,10 @@ nav {
         color: #717376;
         line-height: 1.5rem;
     }
+
+    a:focus {
+        outline: thin dotted !important;
+    }
     
     fieldset {
         padding: 0;
@@ -168,8 +172,7 @@ nav {
        color: #E51A25; 
         font-size: 0.75rem;
     }
-    
-          
+           
     input:focus {
         outline: -webkit-focus-ring-color auto 5px !important;
     } 
@@ -352,10 +355,10 @@ nav {
                 text-align: center;
 
 
-                &:focus {
-                    outline:0px !important;
-                    -webkit-appearance:none;
-                }
+//                &:focus {
+//                    outline:0px !important;
+//                    -webkit-appearance:none;
+//                }
             }
         }
     }

@@ -64,6 +64,8 @@ nav .material-icons {
   .byod-main p {
     color: #717376;
     line-height: 1.5rem; }
+  .byod-main a:focus {
+    outline: thin dotted !important; }
   .byod-main fieldset {
     padding: 0; }
   .byod-main .btn-wrap {
@@ -223,9 +225,6 @@ nav .material-icons {
       color: #404142;
       font-weight: bold;
       text-align: center; }
-      .byod-main .form-group .form-control.control-lg:focus {
-        outline: 0px !important;
-        -webkit-appearance: none; }
   .byod-main .form-check label {
     font-size: 0.875rem; }
   .byod-main .label-group {
