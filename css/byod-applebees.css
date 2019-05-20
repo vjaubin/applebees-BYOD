@@ -21,11 +21,15 @@ header {
     font-weight: 900; }
 
 nav a {
-  color: #404142; }
-nav .material-icons {
+  color: #404142;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
   position: absolute;
   left: 10px;
-  top: 20px;
+  top: 6px;
+  font-size: 2rem; }
+nav .material-icons {
   font-size: 2rem; }
 
 .full-height {
@@ -42,6 +46,9 @@ nav .material-icons {
   bottom: 20px;
   left: 20px;
   right: 20px; }
+
+a:focus {
+  outline: thin dotted !important; }
 
 .byod-main {
   background: #fff;
@@ -64,8 +71,6 @@ nav .material-icons {
   .byod-main p {
     color: #717376;
     line-height: 1.5rem; }
-  .byod-main a:focus {
-    outline: thin dotted !important; }
   .byod-main fieldset {
     padding: 0; }
   .byod-main .btn-wrap {

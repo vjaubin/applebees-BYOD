@@ -36,15 +36,21 @@ header {
 nav {
     
      a {
-            color: $light-grey;
+        color: $light-grey;
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 10px;
+        top: 6px;
+        font-size: 2rem;
         }
     
     .material-icons {
-        position: absolute;
-        left: 10px;
-        top: 20px;
-        font-size: 2rem;
-       
+//        position: absolute;
+//        left: 10px;
+//        top: 20px;
+        font-size: 2rem;  
     }
 }
 
@@ -65,6 +71,10 @@ nav {
     bottom: 20px;
     left: 20px;
     right: 20px;
+}
+
+a:focus {
+    outline: thin dotted !important;
 }
 
 .byod-main {
@@ -103,10 +113,6 @@ nav {
     p {
         color: #717376;
         line-height: 1.5rem;
-    }
-
-    a:focus {
-        outline: thin dotted !important;
     }
     
     fieldset {
