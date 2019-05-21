@@ -87,10 +87,15 @@ a:focus {
     font-family: "FFGoodWebProMedium", sans-serif;
     font-weight: 900;
     outline: inherit; }
-    .byod-main .c-button:focus {
-      outline: -webkit-focus-ring-color auto 5px; }
     .byod-main .c-button.c-button--colored {
-      background: #ab192d; }
+      background: #ab192d;
+      border: 1px solid #ab192d; }
+      .byod-main .c-button.c-button--colored:focus {
+        outline: -webkit-focus-ring-color auto 5px !important; }
+      .byod-main .c-button.c-button--colored:hover {
+        color: #ab192d;
+        background-color: #fff;
+        border: 1px solid #ab192d; }
     .byod-main .c-button.c-button-dark {
       background: #000;
       font-size: 1.25rem; }
