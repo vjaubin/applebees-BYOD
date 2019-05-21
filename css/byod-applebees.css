@@ -99,6 +99,8 @@ a:focus {
     .byod-main .c-button.c-button-dark {
       background: #000;
       font-size: 1.25rem; }
+      .byod-main .c-button.c-button-dark:focus {
+        outline: -webkit-focus-ring-color auto 5px !important; }
       .byod-main .c-button.c-button-dark img {
         margin: 0 5px 3px; }
     .byod-main .c-button.c-button-cancel {

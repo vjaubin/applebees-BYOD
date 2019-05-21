@@ -171,7 +171,11 @@ a:focus {
             background: #000;
             font-size: 1.25rem;
             
+            &:focus {
+                outline: -webkit-focus-ring-color auto 5px !important;
+            }
             
+
             img {
                 margin: 0 5px 3px;
             }
