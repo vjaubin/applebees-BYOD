@@ -228,6 +228,12 @@ a:focus {
             position: relative;
         }
         
+        .error {
+            position: absolute;
+            right: 0;
+            bottom: -20px;
+        }
+        
         .form-inline  {           
             display: -webkit-box;
             display: -ms-flexbox;
@@ -263,11 +269,7 @@ a:focus {
   
     .form-group {
         
-       .error {
-            position: absolute;
-            right: 0;
-            bottom: -20px;
-        }
+   
          
         &.has-error {
             

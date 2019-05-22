@@ -35,12 +35,14 @@
 
         <div class="form-group table-code-group">
             <label for="table-code">Enter your table code so you can review your order and checkout</label>
-            <input type="text" id="table-code" class="form-control control-lg" aria-describedby="table-code-help" maxlength="6">
-            <span class="error">Enter valid code</span>
+            
+            <input type="text" id="table-code" class="form-control control-lg" aria-describedby="table-code-error" maxlength="7">
+            
+            <span class="error" id="table-code-error" role="alert">Enter valid code</span>
         </div>
 
 
-        <p id="table-code-help">Find the 6-digit code on your table</p>
+        <p>Find the 7-digit code on your table</p>
 
     </div>
     

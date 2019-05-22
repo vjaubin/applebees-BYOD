@@ -129,6 +129,10 @@ a:focus {
   .byod-main .alt-form .form-group {
     margin-bottom: 20px;
     position: relative; }
+  .byod-main .alt-form .error {
+    position: absolute;
+    right: 0;
+    bottom: -20px; }
   .byod-main .alt-form .form-inline {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -155,10 +159,6 @@ a:focus {
       -ms-flex-align: center;
       align-items: center;
       margin-bottom: 0; }
-  .byod-main .form-group .error {
-    position: absolute;
-    right: 0;
-    bottom: -20px; }
   .byod-main .form-group.has-error .form-control {
     border-bottom: 2px solid #E51A25; }
   .byod-main .form-group.has-error .error {
@@ -623,5 +623,3 @@ button.close {
     display: block; }
     .summry-table a:hover {
       background: #eee; }
-
-/*# sourceMappingURL=byod-applebees.css.map */
