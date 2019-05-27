@@ -171,7 +171,14 @@ a:focus {
   .byod-main .alt-form .form-group {
     margin-bottom: 20px;
     position: relative; }
+<<<<<<< HEAD
   /* line 238, /Users/vincentjaubin/Documents/GitHub/applebees-BYOD/css/byod-applebees.scss */
+=======
+  .byod-main .alt-form .error {
+    position: absolute;
+    right: 0;
+    bottom: -20px; }
+>>>>>>> 78da0313dc66aeac8a6ea329bd7d439bcabdadca
   .byod-main .alt-form .form-inline {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -199,6 +206,7 @@ a:focus {
       -ms-flex-align: center;
       align-items: center;
       margin-bottom: 0; }
+<<<<<<< HEAD
   /* line 273, /Users/vincentjaubin/Documents/GitHub/applebees-BYOD/css/byod-applebees.scss */
   .byod-main .form-group.has-error {
     position: relative; }
@@ -211,6 +219,14 @@ a:focus {
       right: 0;
       bottom: -20px; }
   /* line 287, /Users/vincentjaubin/Documents/GitHub/applebees-BYOD/css/byod-applebees.scss */
+=======
+  .byod-main .form-group.has-error .form-control {
+    border-bottom: 2px solid #E51A25; }
+  .byod-main .form-group.has-error .error {
+    position: absolute;
+    right: 0;
+    bottom: -20px; }
+>>>>>>> 78da0313dc66aeac8a6ea329bd7d439bcabdadca
   .byod-main .form-group #table-code {
     text-transform: uppercase; }
   /* line 291, /Users/vincentjaubin/Documents/GitHub/applebees-BYOD/css/byod-applebees.scss */
@@ -812,5 +828,8 @@ button.close {
     /* line 855, /Users/vincentjaubin/Documents/GitHub/applebees-BYOD/css/byod-applebees.scss */
     .summry-table a:hover {
       background: #eee; }
+<<<<<<< HEAD
 
 /*# sourceMappingURL=byod-applebees.css.map */
+=======
+>>>>>>> 78da0313dc66aeac8a6ea329bd7d439bcabdadca

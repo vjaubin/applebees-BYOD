@@ -52,9 +52,9 @@ privacy policy link
                 <div class="form-group mt-3">
                     <div class="replaced">
                         <label for="cardNumber">Card Number</label>
-                        <input id="cardNumber" title="Credit Card Number" type="text" maxlength="16" pattern="[0-9]{15,16}" class="form-control" autocomplete="cc-number" required readonly>
+                        <input id="cardNumber" title="Credit Card Number" type="text" maxlength="16" pattern="[0-9]{15,16}" class="form-control" aria-describedby="card-number-error" autocomplete="cc-number" required readonly>
 
-                        <div class="invalid-feedback error text-right">
+                        <div class="invalid-feedback error text-right" role="alert" id="card-number-error">
                             Card number invalid.
                         </div>
                     </div>
@@ -65,11 +65,15 @@ privacy policy link
                         <div class="form-group" aria-labelledby="expirationLabel">
                             <label id="expirationLabel">Expiration Date</label>
 
-                            <input id="cardExpirationMonth" title="Credit Card Expiration Month" placeholder="MM" type="text" maxlength="2" pattern="[0-9]*"  class="form-control expiration col-5 pl-0" aria-label="Expiration Month" autocomplete="cc-exp-month" required>
+                            <input id="cardExpirationMonth" title="Credit Card Expiration Month" placeholder="MM" type="text" maxlength="2" pattern="[0-9]*"  aria-describedby="expiration-error" class="form-control expiration col-5 pl-0" aria-label="Expiration Month" autocomplete="cc-exp-month" required>
 
+<<<<<<< HEAD
                             <input id="cardExpirationYear" title="Credit Card Expiration Year" placeholder="YY" type="text" maxlength="2" pattern="[0-9]*"  class="form-control expiration col-5 ml-3 pl-0" aria-label="Expiration Year" autocomplete="cc-exp-year" required>
+=======
+                            <input id="cardExpirationYear" title="Credit Card Expiration Year" placeholder="YY" type="text" maxlength="2" pattern="[0-9]*"   aria-describedby="expiration-error" class="form-control expiration col-5 ml-4 pl-0" aria-label="Expiration Year" autocomplete="cc-exp-year" required>
+>>>>>>> 78da0313dc66aeac8a6ea329bd7d439bcabdadca
 
-                            <div class="invalid-feedback error text-right">
+                            <div class="invalid-feedback error text-right"  id="expiration-error" role="alert">
                                 Expiration invalid.
                             </div>
                         </div>
@@ -79,9 +83,9 @@ privacy policy link
                         <div class="form-group">
                             <label for="cardCSC" class="form-control-placeholder">CCV</label>
 
-                            <input id="cardCSC" title="Credit Card CSC Code" type="text" maxlength="4" pattern="[0-9]{3,4}" class="form-control csc" autocomplete="cc-csc" required readonly>
+                            <input id="cardCSC" title="Credit Card CSC Code" type="text" maxlength="4" pattern="[0-9]{3,4}" class="form-control csc" aria-describedby="ccv-error" autocomplete="cc-csc" required readonly>
 
-                            <div class="invalid-feedback error text-right">
+                            <div class="invalid-feedback error text-right"  id="ccv-error" role="alert">
                                 CSC invalid.
                             </div>
                         </div>
