@@ -7,6 +7,10 @@
     <title>AppleBee's - BYOD</title>
     <meta name="description" content="Add descprition here">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    
+    <link rel="preconnect" href="https://cnp.merchantlink.com">
+    <link rel="preload" href="js/payment-credit.js" as="script">
+    
     <!--Contains Bootstrap-->
     <link rel="stylesheet" href="https://www.applebees.com/styles/css/main.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -16,6 +20,11 @@
     <link rel="stylesheet" href="css/byod-applebees.css">
     <link rel="stylesheet" href="css/fonts-apb.css">
     
+    <script type="text/javascript" src="js/bootstrap-native-v4.min.js"></script>
+    <script type="text/javascript" src="js/handleError.js"></script>
+    <script type="text/javascript" src="js/payment-credit.js" async></script>
+    
+    <style id="antiClickjack"> body { display: none !important; } </style>
 </head>
     
 <body>
@@ -36,7 +45,7 @@
             <li>
                 <a href="" aria-label="your saved visa" class="visa-added payment-added">
                     <i class="left-side" aria-hidden="true"></i>
-                   Visa ending in 3456 <!-- <span aria-label="visa ending in" class="card-number">ending in 3456</span> -->
+                   Visa <span aria-hidden="true">•</span> 3456 
                     <i class="right-side" aria-hidden="true"></i>
                 </a>
             </li>
@@ -52,7 +61,7 @@
             <li>
                 <a href="" aria-label="your saved apple pay" class="applebee-card-added payment-added">
                    <i class="left-side" aria-hidden="true"></i>
-                    Gift Card Balance:<span arial-label="gift card balance">$35.00</span>       
+                    Gift Card Balance: <span arial-label="gift card balance">$35.00</span>       
                     <i class="right-side" aria-hidden="true"></i>
                 </a>
             </li>
@@ -66,7 +75,7 @@
             </li>
             
              <li>
-                <a href="credit-debit-card.html" aria-label="add credit or debit card" class="add-credit-debit-card">
+                <a href="credit-debit-card.html" aria-label="add credit or debit card" class="add-credit-debit-card" data-toggle="modal" data-target="#credit-modal">
                    <i class="left-side" aria-hidden="true"></i>
                     Credit or Debit Card 
                     <i class="right-side" aria-hidden="true"></i>
@@ -79,14 +88,109 @@
                     Gift Card
                     <i class="right-side" aria-hidden="true"></i>
                 </a>
-            </li>
+            </li>         
         </ul>
         
-        <div class="text-center btn-wrap fixed-bottom">
-           <p class="error">Add a payment method to cover the full amount</p>
 
-           <input type="submit" class="c-button c-button--colored" value="Pay Now">
-           
+
+<!-- Modal -->
+<div class="modal fade" id="credit-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h5 class="modal-title" id="exampleModalLabel">Credit or Debit Card</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="form" novalidate>
+
+                    <fieldset class="alt-form">
+                        <legend class="sr-only">Credit Card Information</legend>
+
+                        <div class="form-group mt-3">
+                            <div class="replaced">
+                                <label for="cardNumber">Card Number</label>
+                                <input id="cardNumber" title="Credit Card Number" type="text" maxlength="16" pattern="[0-9]{15,16}" class="form-control" autocomplete="cc-number" required readonly>
+
+                                <div class="invalid-feedback error text-right">
+                                    Card number invalid.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6 replaced">
+                                <div class="form-group" aria-labelledby="expirationLabel">
+                                    <label id="expirationLabel">Expiration Date</label>
+
+                                    <input id="cardExpirationMonth" title="Credit Card Expiration Month" placeholder="MM" type="text" maxlength="2" pattern="[0-9]*" class="form-control expiration col-5 pl-0" aria-label="Expiration Month" autocomplete="cc-exp-month" required>
+
+                                    <input id="cardExpirationYear" title="Credit Card Expiration Year" placeholder="YY" type="text" maxlength="2" pattern="[0-9]*" class="form-control expiration col-5 ml-3 pl-0" aria-label="Expiration Year" autocomplete="cc-exp-year" required>
+
+                                    <div class="invalid-feedback error text-right">
+                                        Expiration invalid.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 replaced">
+                                <div class="form-group">
+                                    <label for="cardCSC" class="form-control-placeholder">CCV</label>
+
+                                    <input id="cardCSC" title="Credit Card CSC Code" type="text" maxlength="4" pattern="[0-9]{3,4}" class="form-control csc" autocomplete="cc-csc" required readonly>
+
+                                    <div class="invalid-feedback error text-right">
+                                        CSC invalid.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="zipCode" class="form-control-placeholder">Zip Code</label>
+                            <input id="zipCode" title="Zip Code" type="tel" maxlength="5" pattern="[0-9]{5}" class="form-control zip" autocomplete="postal-code" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-control-placeholder">First Name</label>
+                                    <input id="firstName" type="text" maxlength="50" class="form-control" autocomplete="cc-given-name" required>
+                                </div>
+                            </div>
+
+                            <div class="col-6">
+                                <div class="form-group">
+                                    <label for="lastName" class="form-control-placeholder">Last Name</label>
+
+                                    <input id="lastName" t type="text" maxlength="50" class="form-control" autocomplete="cc-family-name" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-wrap">
+                            <button type="submit" id="button" class="c-button c-button--colored" disabled>Add</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <!--
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+-->
+        </div>
+    </div>
+</div>
+        
+        <div class="text-center btn-wrap fixed-bottom">
+           <p class="error">“Add a payment method to cover the remaining balance ($X.XX)</p>
+
+            <button type="submit" class="c-button c-button--colored">Pay Now <span aria-hidden="true">•</span> $57.91</button>
+                    
             <button type="submit" class="c-button c-button-dark">Set Up<img src="img/apple-pay-logo.png" width="55" height="23" alt="Set up Apple Pay"></button>
         </div>
         
@@ -109,5 +213,14 @@
 });
 </script>
   
+  
+    <script type="text/javascript">
+        if (self === top) {
+            const antiClickjack = document.getElementById("antiClickjack");
+            antiClickjack.parentNode.removeChild(antiClickjack);
+        } else {
+            top.location = self.location;
+        }
+    </script>
 </body>
 </html>

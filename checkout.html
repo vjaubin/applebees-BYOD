@@ -75,10 +75,10 @@
         
         <ul class="tip-amount" arial-label="tip amount">
             <li><a href="#"><span arial-label="tip percentage">10%</span></a></li>
-            <li><a href="#"><span arial-label="tip percentage">15%</span> <span aria-label="tip amount">• $6.59</span></a></li>
+            <li><a href="#"><span arial-label="tip percentage">15%</span> <span aria-label="tip amount"><span aria-hidden="true">•</span> $6.59</span></a></li>
             <li><a href="#"><span arial-label="tip percentage">18%</span></a></li>
             <li><a href="#"><span arial-label="tip percentage">20%</span></a></li>
-            <li><a href="#" data-toggle="modal" id="trigger" data-target="#otherTipAmount" arial-label="Other tip amount">Others</a></li>
+            <li><a href="#" data-toggle="modal" id="trigger" data-target="#otherTipAmount" arial-label="Other tip amount">Other</a></li>
         </ul>
        
         <div class="cart mt-3">
@@ -104,7 +104,7 @@
         </div>
         
         <div class="btn-wrap text-center fixed-bottom">
-            <button type="button" class="c-button c-button--colored">Continue Checkout <span arial-label="Checkout total amount">$57.91</span></button>
+            <button type="button" class="c-button c-button--colored">Continue Checkout <span aria-hidden="true">•</span> <span arial-label="Checkout total amount">$57.91</span></button>
         </div>
     </div>
     
@@ -119,16 +119,16 @@
       </div>
        <div class="modal-body">
 
-            <div class="form-group">
-                <div class="form-group">
-                   <label class="text-center d-block tip-amt-label" for="tip-amount">Enter Custom Amount</label>
-                   
-                    <input type="number" class="form-control control-lg active" id="tip-amount">
-                    
-                </div>
+           
+            <div class="form-group has-error">
+               <label class="text-center d-block tip-amt-label" for="tip-amount">Enter Custom Amount</label>
+
+                <input type="number" class="form-control control-lg active" id="tip-amount">
+                 <span class="error">Please enter a $-value for a tip</span>
             </div>
+           
             
-            <p class="text-center">Your subtotal is $43.95</p>
+            <p class="text-center">Your new subtotal is $43.95</p>
           </div>
       <div class="modal-footer">
             <button type="button" class="c-button c-button--colored">Save</button>
