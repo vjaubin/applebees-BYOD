@@ -315,7 +315,7 @@ a:focus {
             }
             
             .form-control {
-                max-width: 275px;
+                max-width: 255px;
                 display: block;
                 margin: 54px auto 44px;   
             }
@@ -475,9 +475,17 @@ a:focus {
                     color: #AB192D;
                     border: 1px solid rgba(171,25,45,0);
                     font-weight: 900;
+                    
+                    .tip-amount-calculated {
+                        display: inline;
+                    }
                 }
             }
 		}
+        
+        .tip-amount-calculated {
+            display: none;
+        }
 	}
 	
 	.scroll::-webkit-scrollbar {

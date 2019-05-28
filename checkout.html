@@ -75,10 +75,10 @@
         <h2>Tip</h2>
         
         <ul class="tip-amount" arial-label="tip amount">
-            <li><a href="#"><span arial-label="tip percentage">10%</span></a></li>
-            <li><a href="#" class="active"><span arial-label="tip percentage">15%</span> <span aria-label="tip amount"><span aria-hidden="true">•</span> $6.59</span></a></li>
-            <li><a href="#"><span arial-label="tip percentage">18%</span></a></li>
-            <li><a href="#"><span arial-label="tip percentage">20%</span></a></li>
+            <li><a href="#"><span arial-label="tip percentage">10%</span> <span class="tip-amount-calculated" aria-label="tip amount"><span aria-hidden="true">•</span> $6.59</span></a></li>
+            <li><a href="#" class="active"><span arial-label="tip percentage">15%</span> <span class="tip-amount-calculated" aria-label="tip amount"><span aria-hidden="true">•</span> $6.59</span></a></li>
+            <li><a href="#"><span arial-label="tip percentage">18%</span> <span class="tip-amount-calculated" aria-label="tip amount"><span aria-hidden="true">•</span> $6.59</span></a></li>
+            <li><a href="#"><span arial-label="tip percentage">20%</span> <span class="tip-amount-calculated" aria-label="tip amount"><span aria-hidden="true">•</span> $6.59</span></a></li>
             <li><a href="#" data-toggle="modal" id="trigger" data-target="#otherTipAmount" arial-label="Other tip amount">Other</a></li>
         </ul>
        
@@ -124,7 +124,7 @@
             <div class="form-group has-error">
                <label class="text-center d-block tip-amt-label" for="tip-amount">Enter Custom Amount</label>
 
-                <input type="number" class="form-control control-lg active" id="tip-amount">
+                <input type="number" class="form-control control-lg custom-amount" id="tip-amount">
                  <span class="error">Please enter a $-value for a tip</span>
             </div>
            
@@ -149,10 +149,14 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 <script>
-$('.tip-amount').on('click', 'a', function() {
-    $('.tip-amount a.active').removeClass('active');
-    $(this).addClass('active');
-});
+    $( document ).ready(function() {
+        $('.tip-amount').on('click', 'a', function() {
+            $('.tip-amount a.active').removeClass('active');
+            $(this).addClass('active');
+        });
+        
+        
+    });
 </script>
 
 </html>
