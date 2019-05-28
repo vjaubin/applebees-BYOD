@@ -69,19 +69,20 @@
                 <div class="col-8">Ice Tea</div>
                 <div class="col-3 text-right">$0.99</div>
             </div>
+            
         </div>
         
         <h2>Tip</h2>
         
         <ul class="tip-amount" arial-label="tip amount">
             <li><a href="#"><span arial-label="tip percentage">10%</span></a></li>
-            <li><a href="#"><span arial-label="tip percentage">15%</span> <span aria-label="tip amount"><span aria-hidden="true">•</span> $6.59</span></a></li>
+            <li><a href="#" class="active"><span arial-label="tip percentage">15%</span> <span aria-label="tip amount"><span aria-hidden="true">•</span> $6.59</span></a></li>
             <li><a href="#"><span arial-label="tip percentage">18%</span></a></li>
             <li><a href="#"><span arial-label="tip percentage">20%</span></a></li>
             <li><a href="#" data-toggle="modal" id="trigger" data-target="#otherTipAmount" arial-label="Other tip amount">Other</a></li>
         </ul>
        
-        <div class="cart mt-3">
+        <div class="cart mt-3 cart-total">
             <div class="row">
                 <div class="col-6">Subtotal</div>
                 <div class="col-6 text-right">$43.95</div>
@@ -147,6 +148,11 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-
+<script>
+$('.tip-amount').on('click', 'a', function() {
+    $('.tip-amount a.active').removeClass('active');
+    $(this).addClass('active');
+});
+</script>
 
 </html>

@@ -115,6 +115,10 @@ a:focus {
                 line-height: 2rem;
             }
         }
+        
+        &.cart-total {
+            margin-bottom: 6rem;
+        }
     }
     
     p {
@@ -122,7 +126,7 @@ a:focus {
         line-height: 1.5rem;
         font-weight: 500;
     }
-    
+
     fieldset {
         padding: 0;
     }
@@ -276,17 +280,18 @@ a:focus {
   
     .form-group {
         
-<<<<<<< HEAD
-=======
-   
-         
->>>>>>> 78da0313dc66aeac8a6ea329bd7d439bcabdadca
+
         &.has-error {
             position: relative;
             
             .form-control {
                 border-bottom: 2px solid #E51A25 !important;
             }
+            
+            .control-lg {
+                border-bottom: 2px dotted #E51A25 !important;
+            }
+                
             
             .error {
                 position: absolute;
@@ -390,7 +395,7 @@ a:focus {
             border-radius: 0;
             -webkit-appearance: none; 
             caret-color: $red;
-                
+            
             &.control-lg {
                 border: none;
                 border-bottom: 1px dotted #9D9FA1;
@@ -403,10 +408,11 @@ a:focus {
                 + .error {
                     text-align: center;
                     left: 0;
-                    bottom: -34px;
-//                    position: relative;
-//                    text-align: center;
-//                    display: block;
+                    bottom: 20px;
+                    position: relative;
+                    text-align: center;
+                    display: block;
+                    
                 }
 
 
@@ -463,8 +469,8 @@ a:focus {
                 border-radius: 25px; 
                 font-weight: 500;
                 
-                &:focus,
-                &:hover {
+             
+                &.active {
                     background: rgba(171,25,45,0.2);
                     color: #AB192D;
                     border: 1px solid rgba(171,25,45,0);
